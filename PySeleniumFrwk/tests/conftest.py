@@ -26,7 +26,9 @@ def setup(request):
 
     request.cls.driver = driver
     yield
+    # PASS
     driver.close()
+    # driver.quit()
 
 
 @pytest.mark.hookwrapper
