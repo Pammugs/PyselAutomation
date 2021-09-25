@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.options import Options
 
 
 chrome_options = Options()
-chrome_options.add_experimental_option("debuggerAddress","localhost:9222")
+chrome_options.add_experimental_option("debuggerAddress", "localhost:9222")
 
 driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(),options=chrome_options)
 
