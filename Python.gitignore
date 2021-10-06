@@ -140,3 +140,4 @@ cython_debug/
 PySeleniumFrwk_branch/SeleniumExamples/screenshot/
 PySeleniumFrwk/.idea
 /venv
+/.idea
