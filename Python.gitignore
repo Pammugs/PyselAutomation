@@ -138,6 +138,6 @@ dmypy.json
 cython_debug/
 
 PySeleniumFrwk_branch/SeleniumExamples/screenshot/
-PySeleniumFrwk/.idea
-/venv
-/.idea
+PySeleniumFrwk/.idea/
+/venv/
+/.idea/
