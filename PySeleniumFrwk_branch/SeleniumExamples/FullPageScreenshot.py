@@ -13,6 +13,6 @@ driver.maximize_window()
 driver.implicitly_wait(1)
 area = lambda exp: driver.execute_script('return document.body.parentNode.scroll' + exp)
 driver.set_window_size(area('Width'), area('Height'))
-driver.find_element_by_tag_name('body').screenshot('./screenshot/fullpage3.jpg')
+driver.find_element_by_tag_name('body').screenshot('./screenshot/fullpage1.jpg')
 
 
