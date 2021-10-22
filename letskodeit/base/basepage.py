@@ -10,9 +10,10 @@ This should not be used by creating object instances
 Example:
     Class LoginPage(BasePage)
 """
-from base.selenium_driver import SeleniumDriver
+from letskodeit.base.selenium_driver import SeleniumDriver
 from traceback import print_stack
-from utilities.util import Util
+from letskodeit.utilities.util import Util
+
 
 class BasePage(SeleniumDriver):
 

@@ -1,6 +1,7 @@
-import utilities.custom_logger as cl
+import letskodeit.utilities.custom_logger as cl
 import logging
-from base.basepage import BasePage
+from letskodeit.base.basepage import BasePage
+
 
 class RegisterCoursesPage(BasePage):
 

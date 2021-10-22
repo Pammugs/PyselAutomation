@@ -1,7 +1,8 @@
-import utilities.custom_logger as cl
-from pages.home.navigation_page import NavigationPage
+import letskodeit.utilities.custom_logger as cl
+from letskodeit.pages.home.navigation_page import NavigationPage
 import logging
-from base.basepage import BasePage
+from letskodeit.base.basepage import BasePage
+
 
 class LoginPage(BasePage):
 
