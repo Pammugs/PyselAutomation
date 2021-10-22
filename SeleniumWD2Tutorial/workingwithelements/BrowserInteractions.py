@@ -1,10 +1,13 @@
 from selenium import webdriver
+from webdriver_manager.microsoft import EdgeChromiumDriverManager
 
-class BrowserInteractions():
 
-    def test(self):
-        baseUrl = "https://letskodeit.teachable.com/pages/practice"
-        driver = webdriver.Firefox()
+class BrowserInteractions:
+
+    @staticmethod
+    def test():
+        baseUrl = "https://courses.letskodeit.com/practice"
+        driver = webdriver.Edge(executable_path=EdgeChromiumDriverManager().install())
 
         # Window Maximize
         driver.maximize_window()
@@ -41,6 +44,7 @@ class BrowserInteractions():
         # Browser Close / Quit
         # driver.close()
         driver.quit()
+
 
 ff = BrowserInteractions()
 ff.test()
