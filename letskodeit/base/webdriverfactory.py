@@ -12,6 +12,10 @@ import traceback
 from selenium import webdriver
 import os
 
+from webdriver_manager.chrome import ChromeDriverManager
+from webdriver_manager.microsoft import EdgeChromiumDriverManager
+
+
 class WebDriverFactory():
 
     def __init__(self, browser):
@@ -47,12 +51,12 @@ class WebDriverFactory():
             driver = webdriver.Firefox()
         elif self.browser == "chrome":
             # Set chrome driver
-            chromedriver = "/Users/atomar/Documents/workspace_personal/selenium/chromedriver"
+            chromedriver = webdriver.Chrome(executable_path=ChromeDriverManager().install())
             os.environ["webdriver.chrome.driver"] = chromedriver
             driver = webdriver.Chrome(chromedriver)
             driver.set_window_size(1440, 900)
         else:
-            driver = webdriver.Firefox()
+            driver = webdriver.Edge(executable_path=EdgeChromiumDriverManager().install())
         # Setting Driver Implicit Time out for An Element
         driver.implicitly_wait(3)
         # Maximize the window

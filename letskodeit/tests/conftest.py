@@ -1,6 +1,7 @@
 import pytest
-from base.webdriverfactory import WebDriverFactory
-from pages.home.login_page import LoginPage
+from letskodeit.base.webdriverfactory import WebDriverFactory
+from letskodeit.pages.home.login_page import LoginPage
+
 
 @pytest.yield_fixture()
 #@pytest.fixture()
